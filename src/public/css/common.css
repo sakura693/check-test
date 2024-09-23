@@ -1,0 +1,17 @@
+.header{
+    width: 1230px;
+    height: 100px;
+}
+
+.header__inner{
+    display: flex;
+    border-bottom: 1px solid #E0DFDE;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo{
+    color: #8B7969;
+    text-align: center;
+}
+

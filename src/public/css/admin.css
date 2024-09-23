@@ -1,0 +1,128 @@
+.header-button {
+    margin-left: auto;
+}
+
+.header-button--logout {
+    color: #8B7969;
+    background: #e2ddd8;
+    padding: 8px 25px;
+    height: 30px;
+    border: 1px solid #8B7969;
+    cursor: pointer;
+}
+
+.admin__content {
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+.admin__heading {
+    color: #8B7969;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+.admin__content-inner{
+    margin: 0 auto;
+}
+
+.admin__select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.admin__input{
+    color: #8B7969;
+    width: 290px;
+    height: 35px;
+    padding: 10px;
+    margin-right: 15px;
+    background: #f1f0f0;
+    border: 1.5px solid #dbdbdb;
+    border-radius: 1px;
+}
+
+.gender-select{
+    color: #8B7969;
+    font-weight: bold;
+    width: 70px;
+    height: 35px;
+    margin-right: 15px;
+    padding-left: 10px;
+    background: #ddd;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 1px;
+    /*選択の部分の三角を変える！！*/
+}
+
+.textarea{
+    color: #8B7969;
+    font-weight: bold;
+    width: 160px;
+    height: 35px;
+    margin-right: 15px;
+    padding-left: 10px;
+    background: #ddd;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 1px;
+}
+
+.date{
+    color: #8B7969;
+    font-weight: bold;
+    width: 110px;
+    height: 35px;
+    margin-right: 15px;
+    background: #ddd;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 1px;
+}
+
+.admin__button--search{
+    width: 80px;
+    height: 35px;
+    margin-right: 15px;
+    background:#493c31;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.admin__button--reset{
+    width: 80px;
+    height: 35px;
+    margin-right: 15px;
+    color: white;
+    background:#b59981;
+    border: none;
+    cursor: pointer;
+}
+
+.admin__button--export{
+    color: #8B7969;
+    font-weight: bold;
+    width: 110px;
+    height: 35px;
+    margin-right: 15px;
+    padding-left: 10px;
+    background: #ddd;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 1px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.admin__content-table {
+    margin: 0 auto;
+
+}
+
+.content-table__th{
+    background: #64564b;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+}
