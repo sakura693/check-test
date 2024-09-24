@@ -44,14 +44,14 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <label>
-                        <input type="radio" name="gender" value="1" checked>男性
+                    <label class="radio-button__label" >
+                        <input class="radio-button" type="radio" name="gender" value="1" checked>男性
                     </label>
-                    <label>
-                        <input type="radio" name="gender" value="2">女性
+                    <label class="radio-button__label">
+                        <input class="radio-button" type="radio" name="gender" value="2">女性
                     </label>
-                    <label>
-                        <input type="radio" name="gender" value="3">その他
+                    <label class="radio-button__label">
+                        <input class="radio-button" type="radio" name="gender" value="3">その他
                     </label> 
                 </div>
             </div>
@@ -154,14 +154,16 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <select class="content__select" name="content">
-                        <option value="" disabled selected>選択してください</option>
-                        <option value="商品のお届けについて">商品のお届けについて</option>
-                        <option value="商品の交換について">商品の交換について</option>
-                        <option value="商品トラブル">商品トラブル</option>
-                        <option value="ショップへのお問い合わせ">ショップへのお問い合わせ</option>
-                        <option value="その他">その他</option>
-                    </select>
+                    <div class="select-wrapper">
+                        <select name="content">
+                            <option value="" disabled selected>選択してください</option>
+                            <option value="商品のお届けについて">商品のお届けについて</option>
+                            <option value="商品の交換について">商品の交換について</option>
+                            <option value="商品トラブル">商品トラブル</option>
+                            <option value="ショップへのお問い合わせ">ショップへのお問い合わせ</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form__error">
                     @error('content')

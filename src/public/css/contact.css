@@ -46,10 +46,11 @@ textarea::placeholder {
 
 .form__input--text{
     width: 500px;
+    margin-left: -50px;
 }
 
 .form__input--text input{
-    padding-left: 5px;
+    padding-left: 20px;
     height: 30px;
     background: #e8e0db99;
     border:none;
@@ -68,4 +69,37 @@ textarea::placeholder {
     cursor: pointer;
     margin-bottom: 20px;
 }
+
+.select-wrapper{
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: "▼";
+    color: rgb(158, 156, 156);
+    opacity: 0.8;
+    position: absolute;
+    margin-left: -25px;
+    top: 3px;
+    pointer-events: none;
+}
+
+select{
+    appearance: none;
+    background: #e8e0db99;
+    border: none;
+    height: 30px;
+    color: gray;
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+
+.radio-button__label {
+    padding-left: 20px;
+    cursor: pointer;
+    color: #8B7969;
+    position: relative;
+}
+
 
