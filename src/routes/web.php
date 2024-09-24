@@ -35,13 +35,12 @@ Route::get('/register', [UserController::class, 'index']);
 Route::post('/register', [UserController::class, 'register']);
 
 
-Route::post('/login', [UserController::class, 'login']);
+
 
 Route::middleware('auth')->group (function(){
     Route::get('/admin', [UserController::class, 'admin']);
 });
 
-Route::middleware('auth')->group(function(){
-    Route::post('/admin', [UserController::class, 'login']);
-});
+Route::get('/admin', [UserController::class, 'admin']);
+
 

@@ -153,7 +153,8 @@
                 <span class="form__label--required">※</span>
             </div>
             <div class="form__group-content">
-                <div class="form__input--text">
+                <div 
+                class="form__input--text">
                     <div class="select-wrapper">
                         <select name="content">
                             <option value="" disabled selected>選択してください</option>

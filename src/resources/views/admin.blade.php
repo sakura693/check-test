@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
 @endsection
 
-<!--ヘッダー部分のログアウトボタンの設定-->
+
 @section('header-button') 
 <form class="header-button" action="/logout" method="post">
     @csrf
@@ -18,22 +18,26 @@
         <h2>Admin</h2>
     </div>
 
-    <!--formタグ書いた方がいい？@csrfも-->
+    
     <form class="form" action="" method="">
         @csrf
         <div class="admin__content-inner">
             <div class="admin__select">
                 <input class="admin__input" type="text"  placeholder="名前やメールアドレスを用意してください">
-                <select class="gender-select">
-                    <option value="" disabled selected>性別</option>
-                    <option value="全て">全て</option>
-                    <option value="男性">男性</option>
-                    <option value="女性">女性</option>
-                    <option value="その他">その他</option>
-                </select>
-                <select class="textarea" id="">
-                    <option value="" disabled selected>お問い合わせの種類</option>
-                </select>
+                <div class="select-wrapper">
+                    <select class="gender-select">
+                        <option value="" disabled selected>性別</option>
+                        <option value="全て">全て</option>
+                        <option value="男性">男性</option>
+                        <option value="女性">女性</option>
+                        <option value="その他">その他</option>
+                    </select>
+                </div>
+                <div class="select-wrapper">
+                    <select class="textarea" id="">
+                        <option value="" disabled selected>お問い合わせの種類</option>
+                    </select>
+                </div>
                 <input class="date" type="date">
                 <div class="admin__buttun">
                     <button class="admin__button--search" type="submit">検索</button>

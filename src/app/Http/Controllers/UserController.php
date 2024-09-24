@@ -8,12 +8,12 @@ use App\Models\User;
 
 class UserController extends Controller
 {
-    //✅登録画面が表示される//
+    //登録画面の表示//
     public function index(){
         return view('register');
     }
 
-    //✅登録後、ログイン画面に遷移する//
+    //ログイン画面に遷移//
    public function register(UserRequest $request){
     $register = $request->only(['name', 'email', 'password']);
 
@@ -32,9 +32,6 @@ class UserController extends Controller
     }
     return back();
    }
-
-
-   
 
    //仮：管理画面出力//
    public function admin(){
