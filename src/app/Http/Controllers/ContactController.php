@@ -10,12 +10,12 @@ use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
-    //✅コンタクトフォームに遷移する//
+    //お問い合わせ画面に遷移//
     public function index(){
         return view('contact');
     }
 
-    //✅確認画面に遷移する//
+    //確認画面に遷移//
     public function confirm(ContactRequest $request){
         $contact = $request->only(['last_name', 'first_name', 'gender','email', 'address', 'building', 'select', 'content','detail']);
         
@@ -24,7 +24,7 @@ class ContactController extends Controller
         return view('confirm', compact('contact'));
     }
 
-
+    
     public function store(ContactRequest $request){
         $contact = $request->only(['last_name', 'first_name', 'gender','email', 'address', 'building', 'select', 'detail']);
 
@@ -38,9 +38,7 @@ class ContactController extends Controller
         return view('thanks');
     }
 
-
-
-    //✅サンクスページでhomeを押すとコンタクトフォームに行く//
+    //サンクスページからコンタクトフォームに遷移//
     public function home(){
         return view('contact');
     }

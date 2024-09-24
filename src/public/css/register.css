@@ -10,17 +10,16 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 13px;
-}
-
-
-.register__content__inner {
-    background: #e6ded7;
-    padding: 30px 20px;
+    margin-right: 45px;
 }
 
 .register__content {
     margin: 0 auto;
-    max-width: 1230px;
+}
+
+.register__content__inner {
+    background: #e6ded7;
+    padding: 30px 20px;
 }
 
 .register__heading {
@@ -28,10 +27,6 @@
     text-align: center;
     margin-top: -10px;
     margin-bottom: 30px;
-}
-
-.form {
-    margin: 0 auto;
 }
 
 .register-form {
@@ -89,4 +84,5 @@
     color: red;
     font-size: 10px;
     text-align: left;
+
 }

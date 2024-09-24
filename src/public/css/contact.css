@@ -41,6 +41,7 @@ input::placeholder,
 textarea::placeholder {
     color: gray;
     opacity: 0.8;
+    font-size: 12px;
 }
 
 .form__input--text{
@@ -48,8 +49,9 @@ textarea::placeholder {
 }
 
 .form__input--text input{
+    padding-left: 5px;
     height: 30px;
-    background: #E1DBD699;
+    background: #e8e0db99;
     border:none;
 }
 
@@ -64,5 +66,6 @@ textarea::placeholder {
     border:none;
     padding: 10px 40px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 

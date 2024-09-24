@@ -75,7 +75,6 @@
                         {{ $contact['content'] }}
                     </td>
                 </tr>
-
                 <tr class="confirm-table__row">
                     <th class="confirm-table__header">
                         お問い合わせの内容
@@ -85,12 +84,12 @@
                     </td>
                 </tr>
             </table>
-        </div>
+        </div>  
 
         <div class="form__button">
             <button class="form__button-submit" type="submit">送信</button>
             <button class="form-button-update" type="submit">修正</button>
-        </div>
+        </div>  
     </form>
 </div>
 @endsection

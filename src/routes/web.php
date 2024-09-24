@@ -15,41 +15,32 @@ use App\Http\Controllers\UserController;
 |
 */
 
-//✅ホームにアクセスすると入力ページ(contact)が出力される //
+//お問い合わせ画面に遷移//
 Route::get('/', [ContactController::class, 'index']);
 
-//✅入力ページで送信ボタンを押すと確認(confirm)ページに行く//
+//確認画面に遷移//
 Route::post('/confirm', [ContactController::class, 'confirm']);
 
-//確認ページで送信ボタンを押すとサンクス(thanks)ページに行く or 修正ボタンを押すと入力画面に行く//
-Route::post('/confirm', [ContactController::class, 'store']);
 
+Route::post('/thanks', [ContactController::class, 'store']);
 
-
-
-
-
-//✅サンクスページでボタンを押すと入力画面に行く//
+//入力画面に遷移//
 Route::post('thanks', [ContactController::class, 'home']);
 
 
-
-
-///✅登録画面にアクセスすると登録ページに行く(※UserController)//
+///登録画面に遷移//
 Route::get('/register', [UserController::class, 'index']);
 
-//✅登録ボタンを押すとログイン画面に行く//
+//ログイン画面に遷移//
 Route::post('/register', [UserController::class, 'register']);
 
-//ログインの部分(仮)//
+
 Route::post('/login', [UserController::class, 'login']);
 
 Route::middleware('auth')->group (function(){
     Route::get('/admin', [UserController::class, 'admin']);
 });
 
-
-//管理画面の部分（仮）//
 Route::middleware('auth')->group(function(){
     Route::post('/admin', [UserController::class, 'login']);
 });
